@@ -7,6 +7,9 @@ export default {
   globalPattern: birthDateGlobalPattern,
   parsePattern: birthDatePattern,
   parse: results => {
+    if (!results) {
+      return [];
+    }
     const [, year, month, day] = results;
     const date = new Date(year, month-1, day);
     const age = Math.floor((Date.now() - +date) / millisInYear);
