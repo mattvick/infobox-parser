@@ -1,8 +1,9 @@
 {
   "name": "@mattvick/infobox-parser",
-  "version": "3.6.3-b",
+  "version": "3.6.5-b",
   "description": "Parse Wikipedia Infobox Source",
-  "main": "build/bundle.min.js",
+  "main": "build/bundle.min",
+  "types": "build/bundle.min",
   "scripts": {
     "test": "mocha --no-colors --compilers js:babel-core/register",
     "build": "rollup -c"
